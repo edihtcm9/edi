@@ -23,9 +23,9 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-ms fixed-top">
       <div class="container">
-        <img src="img/Logo edi.jpg" alt="logo edi" width="50" class="rounded-circle img-thumbnail" />
+        <img src="img/Logo edi.jpg" alt="logo edi" width="40" class="rounded-circle"/>
         <a class="navbar-brand" href="#">Dedi Darwis</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -52,7 +52,7 @@
     <section class="jumbotron text-center">
       <img src="img/Dedi Darwis (1).jpg" alt="Dedi Darwis" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Dedi Darwis</h1>
-      <p class="lead">I am an air conditioner technician</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -217,11 +217,11 @@
 
 
       <!-- contact -->
-      <div id="contact">
+      <section id="contact">
         <div class="container">
-          <div class="row text-center mb-3">
+          <div class="row">
             <div class="class">
-              <div class="col">
+              <div class="col text-center mb-3">
                 <h2>Contact Me</h2>
               </div>
             </div>
@@ -242,7 +242,6 @@
                   </div>
                   <button type="kirim" class="btn btn-success">Kirim</button>
                 </form>
-              </div>
             </div>
           </div>
         </div>
@@ -281,13 +280,19 @@
     </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
 
 <script>
- 
- 
+  gsap.registerPlugin(TextPlugin);
+  gsap.to('.lead', { duration: 2, delay: 1.5, text: 'I am an air conditioner technician'})
   gsap.from('.jumbotron img', { duration: 1, rotateY: 360, opacity: 0 });
+  gsap.form('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
+  gsap.form('.display-4', { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
+</script>
+</body>
+</html>
+ 
  
 
-</script>
-  </body>
-</html>
+ 
+ 
