@@ -1,21 +1,21 @@
 .jumbotron {
   padding-top: 6rem;
-  background-color: #3eac87;
+  background-color: #b7e7d7;
 }
 .display-4 {
-  color: white;
+  color: black;
 }
 
 .lead {
-  color: white;
+  color: black;
 }
 
 #projects {
-  background-color: #3eac87;
+  background-color: #b7e7d7;
 }
 
 #gallery {
-  background-color: #3eac87;
+  background-color: #b7e7d7;
 }
 
 section {
